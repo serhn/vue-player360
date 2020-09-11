@@ -1,0 +1,55 @@
+{
+  "name": "@serh/vue-player360",
+  "version": "1.0.0",
+  "description": " A round slider player for vue js.",
+  "main": "dist/vue-player360.umd.js",
+  "module": "dist/vue-player360.esm.js",
+  "unpkg": "dist/vue-player360.min.js",
+  "browser": {
+    "./sfc": "src/vue-player360.vue"
+  },
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "build": "npm run build:umd & npm run build:es & npm run build:unpkg",
+    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/vue-player360.umd.js",
+    "build:es": "rollup --config build/rollup.config.js --format es --file dist/vue-player360.esm.js",
+    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/vue-player360.min.js"
+  },
+  "dependencies": {
+    "@serh/vue-soundmanager": "^1.0.4",
+    "@serh/vue-roundslider": "^1.0.0"
+  },
+  "devDependencies": {
+    "rollup": "^1.17.0",
+    "@rollup/plugin-buble": "^0.21.3",
+    "@rollup/plugin-commonjs": "^11.1.0",
+    "rollup-plugin-vue": "^5.0.1",
+    "vue": "^2.6.10",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serhn/vue-player360.git"
+  },
+  "keywords": [
+    "vue",
+    "vue-compoment",
+    "sound",
+    "audio",
+    "player",
+    "round",
+    "360",
+    "mp3",
+    "mpeg",
+    "html5",
+    "soundmanager"
+  ],
+  "author": "Serhii Nikolaichuk",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/serhn/vue-player360/issues"
+  },
+  "homepage": "https://github.com/serhn/vue-player360#readme"
+}
